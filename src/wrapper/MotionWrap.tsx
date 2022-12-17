@@ -6,6 +6,7 @@ type PROPS = {
 }
 
 const MotionWrap = (Component: FC<any>) => (props: PROPS) => {
+    console.log('props', props);
     return (
         <motion.div
         whileInView={{y: [100, 50, 0], opacity: [0, 0, 1] }}
